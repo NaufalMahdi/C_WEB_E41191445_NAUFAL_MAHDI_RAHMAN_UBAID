@@ -25,3 +25,7 @@ Route::get('/show',[ManagementUserController::class, 'show']);
 Route::get('/edit',[ManagementUserController::class, 'edit']);
 Route::get('/update',[ManagementUserController::class, 'update']);
 Route::get('/destroy',[ManagementUserController::class, 'destroy']);
+
+Route::get('/home', function(){
+    return view("home");
+});
